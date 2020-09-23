@@ -6,3 +6,8 @@ from django.shortcuts import render
 
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
+
+def landing(request):
+    return render(request, 'blog/landing_page.html', {})
+
+
