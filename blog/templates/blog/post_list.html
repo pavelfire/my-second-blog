@@ -1,5 +1,7 @@
 <html>
     <head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <title>Kiss blog</title>
     </head>
     <body>
@@ -9,15 +11,16 @@
 
         {% for post in posts %}
     		<div><br>
-        		<p>published: {{ post.published_date }}</p>
+        		
         		<h1><a href="">{{ post.title }}</a></h1>
+			<p>published: {{ post.published_date }}</p>
         		<p>{{ post.text|linebreaksbr }}</p>
 			
     		</div>
 	{% endfor %}
 
 
-	<div>
+	<div><br>
             <p>published: 23.09.2020, 19:37</p>
             <h2><a href="">Somethik about work</a></h2>
             <p>Stand a good programer is a hard. All tools very fast changes, languages changes, I start to develop Android programs very long time ago, and now I have to learn Kotlin, Java is not use in modern programs.</p>
